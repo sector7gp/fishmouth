@@ -7,7 +7,8 @@ Herramienta profesional para ingenieros y soldadores que permite generar plantil
 -   **Precisión Geométrica**: Cálculos trigonométricos exactos para intersecciones Cilindro-Cilindro, Prisma-Cilindro y variaciones cuadradas.
 -   **Interfaz Moderna**: Desarrollado con Tailwind CSS para una experiencia de usuario premium.
 -   **Escala 1:1**: Generación de archivos PDF en tamaño A4 diseñados para ser impresos y utilizados directamente sobre el material (Escala Real).
--   **Visualización en tiempo real**: Previsualización instantánea del desarrollo plano con marcas de referencia integradas.
+- [x] **Visualización en tiempo real**: Previsualización instantánea del desarrollo plano con marcas de referencia integradas.
+- [x] **Estabilidad Mejorada**: Corregido bug de inicialización (race condition) que afectaba la carga inicial del renderizador.
 
 ## Requerimientos
 

@@ -55,7 +55,7 @@ class App {
         this.lastData = d;
         this.info.p.innerText = `${d.perimeter.toFixed(2)} mm`;
         this.info.h.innerText = `${d.maxHeight.toFixed(2)} mm`;
-        this.renderer.draw(d, p.branchShape);
+        if (this.renderer) this.renderer.draw(d, p.branchShape);
     }
 }
 
