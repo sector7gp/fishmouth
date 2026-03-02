@@ -1,7 +1,15 @@
 // window.PDFGenerator global object
 window.PDFGenerator = {
     generate(data, p) {
-        const { jsPDF } = window.jspdf;
+        // Handle different jsPDF loading variants
+        const jsPDF = window.jspdf ? window.jspdf.jsPDF : window.jsPDF;
+
+        if (!jsPDF) {
+            console.error("jsPDF not found. Please check if the library is loaded correctly.");
+            alert("Error: No se pudo cargar la librería de PDF.");
+            return;
+        }
+
         const orient = data.perimeter > 180 ? 'landscape' : 'portrait';
         const doc = new jsPDF({
             orientation: orient,
