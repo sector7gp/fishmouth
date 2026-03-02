@@ -1,7 +1,6 @@
 // Main App class using global dependencies
 class App {
     constructor() {
-        this.renderer = new window.Renderer('main-canvas', this);
         this.inputs = {
             bS: document.getElementById('branch-shape'),
             bD: document.getElementById('branch-dim'),
@@ -14,6 +13,7 @@ class App {
             p: document.getElementById('info-perimeter'),
             h: document.getElementById('info-height')
         };
+        this.renderer = new window.Renderer('main-canvas', this);
         this.init();
     }
 
